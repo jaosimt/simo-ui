@@ -22,11 +22,13 @@ export default function ContentContainer() {
 	useEffect(() => {
 		if (window.location.pathname !== history.location.pathname) {
 			setOpacity(0);
-			history.push(window.location.pathname);
-			setSelected(window.location.pathname.replace(/^\//, ""));
-			setTimeout(()=>{
-				if (window.simo && window.simo.init) window.simo.init.uiWidgets();
-				setOpacity(1);
+			setTimeout(() => {
+				history.push(window.location.pathname);
+				setSelected(window.location.pathname.replace(/^\//, ""));
+				setTimeout(() => {
+					if (window.simo && window.simo.init) window.simo.init.uiWidgets();
+					setOpacity(1);
+				}, 300);
 			}, 100)
 		}
 	}, [history])
@@ -39,7 +41,7 @@ export default function ContentContainer() {
 			setTimeout(() => {
 				window.simo.init.uiWidgets();
 				setOpacity(1);
-			}, 100);
+			}, 300);
 		}, 100)
 	}
 	
