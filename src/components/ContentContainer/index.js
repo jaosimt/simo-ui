@@ -21,7 +21,10 @@ export default function ContentContainer() {
 	
 	useEffect(() => {
 		if (window.simo && window.simo.init) window.simo.init.uiWidgets();
-	}, [])
+		if (window.location.pathname !== history.location.pathname) {
+			history.push(window.location.pathname);
+		}
+	}, [history])
 	
 	const navClickHandler = (id) => {
 		setOpacity(0);
