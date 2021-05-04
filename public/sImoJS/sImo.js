@@ -335,7 +335,7 @@ sImo.prototype = {
         }
     },
     init: {
-        uiWidgets: function() {
+        uiWidgets: function(callback) {
             var sImoUiThemeColorClass = ["white", "gray", "red", "blue", "green"];
             
             // code block
@@ -636,6 +636,8 @@ sImo.prototype = {
                     })
                 } else if (existingLink && hasSimoUi.length === 0) simo.removeAll(existingLink);
             }
+            
+            if (typeof callback === 'function') callback();
         }
     },
     set: {

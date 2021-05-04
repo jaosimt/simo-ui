@@ -17,7 +17,7 @@ export default function ContentContainer() {
 	const history = useHistory();
 	
 	const [ selected, setSelected ] = useState(window.location.pathname === '/' ? 'home' : window.location.pathname.replace(/^\//, ""));
-	const [ opacity, setOpacity ] = useState(1);
+	const [ opacity, setOpacity ] = useState(0);
 	
 	useEffect(() => {
 		if (window.location.pathname !== history.location.pathname) {
@@ -26,11 +26,10 @@ export default function ContentContainer() {
 				history.push(window.location.pathname);
 				setSelected(window.location.pathname.replace(/^\//, ""));
 				setTimeout(() => {
-					if (window.simo && window.simo.init) window.simo.init.uiWidgets();
-					setOpacity(1);
+					if (window.simo && window.simo.init) window.simo.init.uiWidgets(() => setOpacity(1));
 				}, 300);
-			}, 100)
-		}
+			}, 300)
+		} else setOpacity(1);
 	}, [history])
 	
 	const navClickHandler = (id) => {
@@ -39,10 +38,9 @@ export default function ContentContainer() {
 			setSelected(id);
 			history.push(id === 'home' ? '/' : id);
 			setTimeout(() => {
-				window.simo.init.uiWidgets();
-				setOpacity(1);
+				window.simo.init.uiWidgets(() => setOpacity(1));
 			}, 300);
-		}, 100)
+		}, 300)
 	}
 	
 	return <Fragment>
