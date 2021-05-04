@@ -700,8 +700,8 @@ div.sImo-ui-select.collapsed,
 .transform-180-neg,
 .sImo-ui-down-arrow-white,
 .sImo-ui-up-arrow {
-    -webkit-transition: -webkit-transform 0.4s;
-    transition: transform 0.4s;
+    -webkit-transition: -webkit-transform 300ms;
+    transition: transform 300ms;
     transform-style: preserve-3d;
 }
 
@@ -1084,11 +1084,11 @@ div.sImo-ui-sticky-background {
 
 .sImo-ui-switch input[type="checkbox"].sImo-ui-switch + div > div,
 .transform {
-    -webkit-transition-duration: 0.4s;
-    -moz-transition-duration: 0.4s;
-    -ms-transition-duration: 0.4s;
-    -o-transition-duration: 0.4s;
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 300ms;
+    -moz-transition-duration: 300ms;
+    -ms-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    transition-duration: 300ms;
 
     -webkit-transition-timing-function: cubic-bezier(.54, 1.85, .5, 1);
     -moz-transition-timing-function: cubic-bezier(.54, 1.85, .5, 1);
