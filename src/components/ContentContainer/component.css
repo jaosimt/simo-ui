@@ -22,3 +22,112 @@
     background-color: #C7C7C7;
     color: #5599FF;
 }
+
+@keyframes cmContentExpand {
+    from {
+        left: 50px;
+        width: calc(100% - 50px);
+    } to {
+          left: 200px;
+          width: calc(100% - 200px);
+      }
+}
+
+
+@keyframes cmContentCollapse {
+    from
+    {
+        left: 200px;
+        width: calc(100% - 200px);
+    }
+    to
+    {
+        left: 50px;
+        width: calc(100% - 50px);
+    }
+}
+
+.cm-close-area {
+    height: 100%;
+    position: fixed;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    background-color: transparent;
+}
+
+label:not(.sImo-ui-checkbox):not(.sImo-ui-radio) {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.note {
+    font-style: italic;
+}
+
+.note,
+label.note,
+label:not(.sImo-ui-checkbox):not(.sImo-ui-radio) {
+    font-size: 12px;
+}
+
+label.note,
+label.preview {
+    margin-top: 20px;
+}
+.code {
+    font-family: monospace;
+    background-color: #80808052;
+    padding: 20px;
+    border: 1px dashed;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+.width-200-px {
+    width: 200px;
+}
+
+.preview > * {
+    margin-bottom: 10px;
+}
+
+.preview > * {
+    margin-right: 10px;
+}
+
+div.preview {
+    display: inline-block;
+    width: 100%;
+}
+
+label.snippet {
+    clear: both;
+    margin-top: 20px;
+}
+
+table {
+    font-size: 12px;
+    width: 100%;
+    color: gray;
+    font-family: monospace;
+}
+
+table th {
+    text-align: left;
+    border-bottom: 1px solid gainsboro;
+}
+
+table th,
+table tr {
+    height: 20px;
+}
+
+.sImo-ui-modal-preview {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 500px;
+}

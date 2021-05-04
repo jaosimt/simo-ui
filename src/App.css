@@ -6,8 +6,8 @@
 }
 
 .left-panel {
-    margin-right: 21px;
     width: 200px;
+    position: fixed;
 }
 
 .lp-logo {
@@ -41,6 +41,7 @@
 /***********************/
 
 .right-panel {
+    margin-left: 221px;
     width: calc(100% - 200px);
 }
 

@@ -17,5 +17,25 @@ export default function Home() {
 		<span>So if you're kind of lazy like me 😂, yet needing to save whatever time, fell free. If you're not, then you're not.</span>
 		<p><strong>sImo ui</strong> is free from/of anything! I will be adding a support page later on for anyone as far as comments, suggestions and violent reactions are concern.</p>
 		<p>'till then, have fun... or don't.</p>
+		<label className="snippet">Usage</label>
+		<div className="code">
+			<code>
+				{`
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Page Title</title>
+   </head>
+   
+   <body>
+      <h1>This is a Heading</h1>
+      <p>This is a paragraph.</p>
+   </body>
+   
+   <script id="simo-ui" type="text/javascript" src="sImoJS/sImo.js"></script>
+</html>
+				`}
+			</code>
+		</div>
 	</Fragment>
 }
