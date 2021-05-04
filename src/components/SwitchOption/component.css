@@ -1,0 +1,8 @@
+.preview textarea {
+    width: calc(60% + 10px);
+    height: 100px;
+}
+
+.preview input[type=text] {
+    width: 30%;
+}
