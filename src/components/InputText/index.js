@@ -7,9 +7,11 @@ export default function InputText(props) {
 	
 	return <Fragment>
 		<h1>Input Text</h1>
-		<PageNotFound
-			setMenuItem={ setMenuItem }
-			history={ history }
-			isUnderConstruction={ true } />
+		<div style={ { display: 'flex', justifyContent: 'center' } }>
+			<PageNotFound
+				setMenuItem={ setMenuItem }
+				history={ history }
+				isUnderConstruction={ true } />
+		</div>
 	</Fragment>;
 }
