@@ -1,0 +1,151 @@
+div.sImo-ui-select-wrapper div.sImo-ui-select,
+div.sImo-ui-select-wrapper {
+    line-height: 30px;
+}
+
+div.sImo-ui-select-wrapper div.sImo-ui-select ul.select-options li,
+div.sImo-ui-select-wrapper div.sImo-ui-select div.select-label,
+div.sImo-ui-select-wrapper div.sImo-ui-select.collapsed,
+div.sImo-ui-select-wrapper div.sImo-ui-select span.select-icon,
+div.sImo-ui-select-wrapper {
+    height: 30px;
+}
+
+div.sImo-ui-select-wrapper.big div.sImo-ui-select,
+div.sImo-ui-select-wrapper.big {
+    line-height: 40px;
+}
+
+div.sImo-ui-select-wrapper.big div.sImo-ui-select ul.select-options li,
+div.sImo-ui-select-wrapper.big div.sImo-ui-select div.select-label,
+div.sImo-ui-select-wrapper.big div.sImo-ui-select.collapsed,
+div.sImo-ui-select-wrapper.big div.sImo-ui-select span.select-icon,
+div.sImo-ui-select-wrapper.big {
+    height: 40px;
+}
+
+div.sImo-ui-select-wrapper {
+    position: relative;
+    display: block;
+    float: left;
+    width: auto;
+}
+
+div.sImo-ui-select ul.select-options li,
+div.sImo-ui-select div.select-label,
+div.sImo-ui-select.collapsed {
+    font-size: 12px;
+}
+
+div.sImo-ui-select {
+    float: left;
+    display: inline-block;
+    padding: 0 0 5px 0;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+    position: absolute;
+}
+div.sImo-ui-select select {
+    display: none;
+}
+
+div.sImo-ui-select span.select-icon {
+    width: 30px;
+    display: inline-block;
+    background-size: 50%;
+    float: right;
+}
+div.sImo-ui-select ul.select-options {
+    clear: left;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+div.sImo-ui-select ul.select-options li {
+    padding: 0 10px;
+}
+
+div.sImo-ui-select span.select-label {
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+}
+
+
+/* COLOURS */
+/* common */
+div.sImo-ui-select ul.select-options {
+    border-top: 1px solid #ccc;
+}
+div.sImo-ui-select {
+    border: 1px solid gray;
+}
+
+div.sImo-ui-select.red ul.select-options li:hover,
+div.sImo-ui-select.green ul.select-options li:hover,
+div.sImo-ui-select.blue ul.select-options li:hover,
+div.sImo-ui-select ul.select-options li:hover{
+    color: #777777;
+}
+
+div.sImo-ui-select ul.select-options li:hover,
+div.sImo-ui-select ul.select-options li.selected {
+    background-color: white;
+}
+
+/* default */
+div.sImo-ui-select {
+    background-color: gainsboro;
+}
+div.sImo-ui-select,
+div.sImo-ui-select ul.select-options li.selected,
+div.sImo-ui-select ul.select-options li {
+    color: gray;
+}
+
+/* red */
+div.sImo-ui-select.red,
+div.sImo-ui-select.red ul.select-options li {
+    color: white;
+}
+div.sImo-ui-select.red ul.select-options li.selected{
+    color: #ff2a2a;
+}
+div.sImo-ui-select.red {
+    background-color: #ff2a2a;
+}
+
+/* green */
+div.sImo-ui-select.green,
+div.sImo-ui-select.green ul.select-options li {
+    color: white;
+}
+div.sImo-ui-select.green ul.select-options li.selected{
+    color: #22dd33;
+}
+div.sImo-ui-select.green {
+    background-color: #22dd33;
+}
+
+/* blue */
+div.sImo-ui-select.blue,
+div.sImo-ui-select.blue ul.select-options li {
+    color: white;
+}
+div.sImo-ui-select.blue ul.select-options li.selected{
+    color: #2299ff;
+}
+div.sImo-ui-select.blue {
+    background-color: #5599ff;
+}
+
+
+
+div.sImo-ui-select.red ::-webkit-scrollbar-thumb,
+div.sImo-ui-select.green ::-webkit-scrollbar-thumb,
+div.sImo-ui-select.blue ::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.30);
+}

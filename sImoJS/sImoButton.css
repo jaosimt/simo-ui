@@ -1,0 +1,160 @@
+button,
+input[type=button],
+input[type=submit],
+input[type=reset],
+div.sImoButton {
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 12px;
+    outline: none !important;
+    padding: 0 20px;
+    float: left;
+}
+
+button.big,
+input[type=button].big,
+input[type=submit].big,
+input[type=reset].big,
+div.sImoButton.big {
+    height: 40px;
+    line-height: 40px;
+}
+
+div.sImoButton {
+    text-align: center;
+}
+
+button:disabled,
+input[type=button]:disabled,
+input[type=submit]:disabled,
+input[type=reset]:disabled,
+div.sImoButton.disabled {
+    opacity: 0.3;
+}
+
+/* COLOR */
+
+/* default */
+button,
+input[type=button],
+input[type=submit],
+input[type=reset],
+.sImoButton,
+button:not(:disabled):hover:active,
+input[type=button]:not(:disabled):hover:active,
+input[type=submit]:not(:disabled):hover:active,
+input[type=reset]:not(:disabled):hover:active,
+.sImoButton:not(.disabled):hover:active {
+    color: white;
+    border: 1px solid gray;
+    background-color: gray;
+}
+
+button:not(:disabled):hover,
+input[type=button]:not(:disabled):hover,
+input[type=submit]:not(:disabled):hover,
+input[type=reset]:not(:disabled):hover,
+.sImoButton:not(.disabled):hover,
+
+button:not(:disabled):hover.blue,
+input[type=button]:not(:disabled):hover.blue,
+input[type=submit]:not(:disabled):hover.blue,
+input[type=reset]:not(:disabled):hover.blue,
+.sImoButton:not(.disabled):hover.blue,
+
+button:not(:disabled):hover.green,
+input[type=button]:not(:disabled):hover.green,
+input[type=submit]:not(:disabled):hover.green,
+input[type=reset]:not(:disabled):hover.green,
+.sImoButton:not(.disabled):hover.green,
+
+button:not(:disabled):hover.red,
+input[type=button]:not(:disabled):hover.red,
+input[type=submit]:not(:disabled):hover.red,
+input[type=reset]:not(:disabled):hover.red,
+.sImoButton:not(.disabled):hover.red,
+
+button:not(:disabled):hover,
+input[type=button]:not(:disabled):hover,
+input[type=submit]:not(:disabled):hover,
+input[type=reset]:not(:disabled):hover,
+.sImoButton:not(.disabled):hover {
+    color: white;
+    background-color: gainsboro;
+}
+
+/* red */
+button.red,
+input[type=button].red,
+input[type=submit].red,
+input[type=reset].red,
+.sImoButton.red,
+button:not(:disabled):hover:active.red,
+input[type=button]:not(:disabled):hover:active.red,
+input[type=submit]:not(:disabled):hover:active.red,
+input[type=reset]:not(:disabled):hover:active.red,
+.sImoButton:not(.disabled):hover:active.red {
+    border: 1px solid gray;
+    color: white;
+    background-color: #ff2a2a;
+}
+
+button:not(:disabled):hover.red,
+input[type=button]:not(:disabled):hover.red,
+input[type=submit]:not(:disabled):hover.red,
+input[type=reset]:not(:disabled):hover.red,
+.sImoButton:not(.disabled):hover.red {
+    color: #ff2a2a;
+    border: 1px solid #ff2a2a;
+}
+
+/* green */
+button.green,
+input[type=button].green,
+input[type=submit].green,
+input[type=reset].green,
+.sImoButton.green,
+button:not(:disabled):hover:active.green,
+input[type=button]:not(:disabled):hover:active.green,
+input[type=submit]:not(:disabled):hover:active.green,
+input[type=reset]:not(:disabled):hover:active.green,
+.sImoButton:not(.disabled):hover:active.green {
+    border: 1px solid gray;
+    color: white;
+    background-color: #22dd33;
+}
+
+button:not(:disabled):hover.green,
+input[type=button]:not(:disabled):hover.green,
+input[type=submit]:not(:disabled):hover.green,
+input[type=reset]:not(:disabled):hover.green,
+.sImoButton:not(.disabled):hover.green {
+    color: #22dd33;
+    border: 1px solid #22dd33;
+}
+
+/* blue */
+button.blue,
+input[type=button].blue,
+input[type=submit].blue,
+input[type=reset].blue,
+.sImoButton.blue,
+button:not(:disabled):hover:active.blue,
+input[type=button]:not(:disabled):hover:active.blue,
+input[type=submit]:not(:disabled):hover:active.blue,
+input[type=reset]:not(:disabled):hover:active.blue,
+.sImoButton:not(.disabled):hover:active.blue {
+    border: 1px solid gray;
+    color: white;
+    background-color: #5599ff;
+}
+
+button:not(:disabled):hover.blue,
+input[type=button]:not(:disabled):hover.blue,
+input[type=submit]:not(:disabled):hover.blue,
+input[type=reset]:not(:disabled):hover.blue,
+.sImoButton:not(.disabled):hover.blue {
+    color: #5599ff;
+    border: 1px solid #5599ff;
+}

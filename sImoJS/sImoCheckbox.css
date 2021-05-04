@@ -1,0 +1,188 @@
+/* container */
+label.sImo-ui-radio,
+label.sImo-ui-checkbox {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: 30px;
+    height: 30px;
+    font-size: 16px;
+}
+
+/* Hide the browser's default */
+label.sImo-ui-radio input[type="radio"],
+label.sImo-ui-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+}
+
+/* checkbox / radio */
+label.sImo-ui-radio span.sImo-ui-radio,
+label.sImo-ui-checkbox span.sImo-ui-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    /*background-color: gainsboro;*/
+}
+
+/*label.sImo-ui-radio input[type="radio"] ~ span.sImo-ui-radio,*/
+/*label.sImo-ui-checkbox input[type="checkbox"] ~ span.sImo-ui-checkbox,*/
+/*label.sImo-ui-radio:not(.disabled):hover input[type="radio"]:checked ~ span.sImo-ui-radio,*/
+/*label.sImo-ui-checkbox:not(.disabled):hover input[type="checkbox"]:checked ~ span.sImo-ui-checkbox {*/
+    /*border: 1px solid gray;*/
+/*}*/
+
+/*!* mouse over *!*/
+/*label.sImo-ui-radio:not(.disabled):hover input[type="radio"] ~ span.sImo-ui-radio,*/
+/*label.sImo-ui-checkbox:not(.disabled):hover input[type="checkbox"] ~ span.sImo-ui-checkbox {*/
+    /*background-color: gray;*/
+/*}*/
+
+/*!* checked *!*/
+/*label.sImo-ui-radio:not(.disabled):hover input[type="radio"]:checked ~ span.sImo-ui-radio,*/
+/*label.sImo-ui-checkbox:not(.disabled):hover input[type="checkbox"]:checked ~ span.sImo-ui-checkbox {*/
+    /*background-color: #ccc;*/
+/*}*/
+
+/*label.sImo-ui-radio input[type="radio"]:checked ~ span.sImo-ui-radio,*/
+/*label.sImo-ui-checkbox input[type="checkbox"]:checked ~ span.sImo-ui-checkbox {*/
+    /*background-color: gray;*/
+/*}*/
+
+/* hidden checkmark indicator */
+label.sImo-ui-radio span.sImo-ui-radio:after,
+label.sImo-ui-checkbox span.sImo-ui-checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* checked:after */
+label.sImo-ui-radio input[type="radio"]:checked ~ span.sImo-ui-radio:after,
+label.sImo-ui-checkbox input[type="checkbox"]:checked ~ span.sImo-ui-checkbox:after {
+    display: block;
+}
+
+/* checkmark indicator */
+label.sImo-ui-radio span.sImo-ui-radio:after {
+    top: 10px;
+    left: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+label.sImo-ui-checkbox span.sImo-ui-checkbox:after {
+    left: 11px;
+    top: 6px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+label.sImo-ui-radio span.sImo-ui-radio,
+label.sImo-ui-radio span.sImo-ui-radio:after,
+label.sImo-ui-radio input[type="radio"]:checked ~ span.sImo-ui-radio {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+label.sImo-ui-checkbox span.sImo-ui-checkbox,
+label.sImo-ui-checkbox span.sImo-ui-checkbox:after,
+label.sImo-ui-checkbox input[type="checkbox"]:checked ~ span.sImo-ui-checkbox {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/* default */
+label.sImo-ui-radio:not(.disabled):hover input[type="radio"]:checked ~ span.sImo-ui-radio,
+label.sImo-ui-checkbox:not(.disabled):hover input[type="checkbox"]:checked ~ span.sImo-ui-checkbox,
+label.sImo-ui-radio input[type="radio"] ~ span.sImo-ui-radio,
+label.sImo-ui-checkbox input[type="checkbox"] ~ span.sImo-ui-checkbox {
+    border: 1px solid gray;
+}
+
+label.sImo-ui-radio:not(.disabled):hover input[type="radio"] ~ span.sImo-ui-radio,
+label.sImo-ui-checkbox:not(.disabled):hover input[type="checkbox"] ~ span.sImo-ui-checkbox,
+label.sImo-ui-radio input[type="radio"]:checked ~ span.sImo-ui-radio,
+label.sImo-ui-checkbox input[type="checkbox"]:checked ~ span.sImo-ui-checkbox {
+    background-color: gray;
+}
+
+
+/* red */
+label.sImo-ui-radio:not(.disabled):hover input[type="radio"]:checked.red ~ span.sImo-ui-radio,
+label.sImo-ui-checkbox:not(.disabled):hover input[type="checkbox"]:checked.red ~ span.sImo-ui-checkbox,
+label.sImo-ui-radio input[type="radio"].red ~ span.sImo-ui-radio,
+label.sImo-ui-checkbox input[type="checkbox"].red ~ span.sImo-ui-checkbox {
+    border: 1px solid #ff2a2a;
+}
+
+label.sImo-ui-radio:not(.disabled):hover input[type="radio"].red ~ span.sImo-ui-radio,
+label.sImo-ui-checkbox:not(.disabled):hover input[type="checkbox"].red ~ span.sImo-ui-checkbox,
+label.sImo-ui-radio input[type="radio"]:checked.red ~ span.sImo-ui-radio,
+label.sImo-ui-checkbox input[type="checkbox"]:checked.red ~ span.sImo-ui-checkbox {
+    background-color: #ff2a2a;
+}
+
+/* green */
+label.sImo-ui-radio:not(.disabled):hover input[type="radio"]:checked.green ~ span.sImo-ui-radio,
+label.sImo-ui-checkbox:not(.disabled):hover input[type="checkbox"]:checked.green ~ span.sImo-ui-checkbox,
+label.sImo-ui-radio input[type="radio"].green ~ span.sImo-ui-radio,
+label.sImo-ui-checkbox input[type="checkbox"].green ~ span.sImo-ui-checkbox {
+    border: 1px solid #22dd33;
+}
+
+label.sImo-ui-radio:not(.disabled):hover input[type="radio"].green ~ span.sImo-ui-radio,
+label.sImo-ui-checkbox:not(.disabled):hover input[type="checkbox"].green ~ span.sImo-ui-checkbox,
+label.sImo-ui-radio input[type="radio"]:checked.green ~ span.sImo-ui-radio,
+label.sImo-ui-checkbox input[type="checkbox"]:checked.green ~ span.sImo-ui-checkbox {
+    background-color: #22dd33;
+}
+
+/* blue */
+label.sImo-ui-radio:not(.disabled):hover input[type="radio"]:checked.blue ~ span.sImo-ui-radio,
+label.sImo-ui-checkbox:not(.disabled):hover input[type="checkbox"]:checked.blue ~ span.sImo-ui-checkbox,
+label.sImo-ui-radio input[type="radio"].blue ~ span.sImo-ui-radio,
+label.sImo-ui-checkbox input[type="checkbox"].blue ~ span.sImo-ui-checkbox {
+    border: 1px solid #5599ff;
+}
+
+label.sImo-ui-radio:not(.disabled):hover input[type="radio"].blue ~ span.sImo-ui-radio,
+label.sImo-ui-checkbox:not(.disabled):hover input[type="checkbox"].blue ~ span.sImo-ui-checkbox,
+label.sImo-ui-radio input[type="radio"]:checked.blue ~ span.sImo-ui-radio,
+label.sImo-ui-checkbox input[type="checkbox"]:checked.blue ~ span.sImo-ui-checkbox {
+    background-color: #5599ff;
+}
+
+
+label.sImo-ui-radio input[type="radio"]:checked ~ span.sImo-ui-radio,
+label.sImo-ui-checkbox input[type="checkbox"]:checked ~ span.sImo-ui-checkbox,
+label.sImo-ui-radio:not(.disabled):hover input[type="radio"] ~ span.sImo-ui-radio,
+label.sImo-ui-checkbox:not(.disabled):hover input[type="checkbox"] ~ span.sImo-ui-checkbox {
+    border: 1px solid gray;
+}
+
+label.sImo-ui-radio:not(.disabled):hover input[type="radio"]:checked ~ span.sImo-ui-radio,
+label.sImo-ui-checkbox:not(.disabled):hover input[type="checkbox"]:checked ~ span.sImo-ui-checkbox {
+    background-color: #ccc;
+}
