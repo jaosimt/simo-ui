@@ -20,9 +20,14 @@ export default function ContentContainer() {
 	const [ opacity, setOpacity ] = useState(1);
 	
 	useEffect(() => {
-		if (window.simo && window.simo.init) window.simo.init.uiWidgets();
 		if (window.location.pathname !== history.location.pathname) {
+			setOpacity(0);
 			history.push(window.location.pathname);
+			setSelected(window.location.pathname.replace(/^\//, ""));
+			setTimeout(()=>{
+				if (window.simo && window.simo.init) window.simo.init.uiWidgets();
+				setOpacity(1);
+			}, 100)
 		}
 	}, [history])
 	

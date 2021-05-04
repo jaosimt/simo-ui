@@ -1,6 +1,10 @@
 @import "./fonts/Papyrus.css";
 @import './fonts/Baybayin.css';
 
+* {
+    box-sizing: border-box;
+}
+
 .App {
     display: flex;
 }
