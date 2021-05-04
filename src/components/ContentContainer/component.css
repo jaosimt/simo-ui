@@ -1,0 +1,24 @@
+.rp-content {
+    color: #5599FF;
+}
+
+.rp-content,
+.rp-content > *,
+.lp-menu span,
+.lp-menu a {
+    transition: all ease-in-out 100ms;
+}
+
+.rp-content h1 {
+    margin-top: 0;
+}
+
+.lp-menu span {
+    cursor: pointer;
+}
+
+.lp-menu span.selected {
+    font-weight: bold;
+    background-color: #C7C7C7;
+    color: #5599FF;
+}

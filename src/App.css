@@ -1,38 +1,68 @@
+@import "./fonts/Papyrus.css";
+@import './fonts/Baybayin.css';
+
 .App {
-  text-align: center;
+    display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.left-panel {
+    margin-right: 21px;
+    width: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.lp-logo {
+    font-family: Papyrus, serif;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 56px;
+    padding: 14px 7px 7px;
+    color: #fff;
+    background: #000 url("./images/sImoLogo-white.svg") no-repeat 7px center;
+    background-size: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.lp-menu {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 56px);
+    background-color: gainsboro;
 }
 
-.App-link {
-  color: #61dafb;
+.lp-menu span,
+.lp-menu a {
+    text-decoration: none;
+    color: inherit;
+    padding: 7px 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/***********************/
+
+.right-panel {
+    width: calc(100% - 200px);
+}
+
+.rp-header {
+    display: flex;
+    align-items: center;
+    font-family: Papyrus, serif;
+    font-size: 56px;
+    font-weight: bold;
+    color: #5599ff;
+    border-bottom: 1px solid #5599ff;
+    height: 89px;
+    background: #fff url("./images/sImoLogo-full-inline.svg") no-repeat left center;
+    background-size: 203px;
+    padding-left: 231px;
+    padding-top: 14px;
+}
+
+.rp-content {
+    padding: 14px 14px 14px 0;
+}
+
+.bybyn {
+    font-family: Baybayin-Modern-Club, serif;
 }

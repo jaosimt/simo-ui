@@ -1,0 +1,198 @@
+/**** IPHONE STYLE SWITCH ****/
+input[type="checkbox"] {
+    margin: 0;
+    padding: 0;
+}
+
+.sImo-ui-switch {
+    display: inline-block;
+}
+
+.sImo-ui-switch.disabled {
+    opacity: 0.3;
+}
+
+.sImo-ui-switch input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.sImo-ui-switch span,
+.sImo-ui-switch input[type="checkbox"].sImo-ui-switch + div,
+.sImo-ui-switch input[type="checkbox"].sImo-ui-switch:checked + div > div {
+    cursor: pointer;
+    float: left;
+}
+
+.sImo-ui-switch span {
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+/* Normal Track */
+.sImo-ui-switch input[type="checkbox"].sImo-ui-switch + div {
+    border: 1px solid #878787;
+    border-radius: 999px;
+    -webkit-transition-duration: .4s;
+    -webkit-transition-property: background-color, box-shadow;
+}
+
+.sImo-ui-switch input[type="checkbox"].sImo-ui-switch + div > div {
+    float: left;
+    border-radius: inherit;
+    pointer-events: none;
+    margin-top: 1px;
+    margin-left: 1px;
+}
+
+/* background */
+.sImo-ui-switch input[type="checkbox"].sImo-ui-switch + div {
+    background-color: transparent;
+}
+
+/* off switch background */
+.sImo-ui-switch input[type="checkbox"].sImo-ui-switch:not(checked) + div > div {
+    background-color: gainsboro;
+    
+}
+
+/* on switch background */
+.sImo-ui-switch input[type="checkbox"].sImo-ui-switch:checked + div > div {
+    background-color: white;
+}
+
+.sImo-ui-switch input[type="checkbox"].sImo-ui-switch:checked + div > div {
+    -webkit-transform: translate3d(20px, 0, 0);
+    -moz-transform: translate3d(20px, 0, 0);
+    -ms-transform: translate3d(20px, 0, 0);
+    -o-transform: translate3d(20px, 0, 0);
+    transform: translate3d(20px, 0, 0);
+}
+
+.sImo-ui-switch input[type="checkbox"] + div > div {
+    margin-top: 1px;
+}
+
+.sImo-ui-switch input[type="checkbox"].sImo-ui-switch + div {
+    vertical-align: middle;
+}
+
+/* sImoSwitch Blue (Default) */
+.sImo-ui-switch input[type="checkbox"].sImo-ui-switch:checked + div {
+    width: 40px;
+    background-position: 0 0;
+}
+
+/* sImoSwitch Default */
+.sImo-ui-switch input[type="checkbox"],
+.sImo-ui-switch input[type="checkbox"].sImo-ui-switch + div {
+    width: 40px;
+}
+
+.sImo-ui-switch span,
+.sImo-ui-switch input[type="checkbox"],
+.sImo-ui-switch input[type="checkbox"].sImo-ui-switch + div {
+    height: 20px;
+    line-height: 20px;
+}
+.sImo-ui-switch input[type="checkbox"]:not(.big) + div > div {
+    width: 16px;
+    height: 16px;
+}
+
+/* sImoSwitch Big */
+.sImo-ui-switch span.big,
+.sImo-ui-switch input[type="checkbox"].big.sImo-ui-switch + div,
+.sImo-ui-switch input[type="checkbox"].big.sImo-ui-switch {
+    height: 25px;
+    line-height: 25px;
+}
+.sImo-ui-switch input[type="checkbox"].big.sImo-ui-switch,
+.sImo-ui-switch input[type="checkbox"].big.sImo-ui-switch + div {
+    width:50px;
+}
+
+.sImo-ui-switch input[type="checkbox"].big.sImo-ui-switch + div > div {
+    height: 21px;
+    line-height: 21px;
+}
+.sImo-ui-switch input[type="checkbox"].big.sImo-ui-switch + div > div {
+    width: 21px;
+}
+
+/* sImoSwitch Big Blue (Default) */
+.sImo-ui-switch input[type="checkbox"].big.sImo-ui-switch:checked + div > div {
+    -webkit-transform: translate3d(25px, 0, 0);
+    -moz-transform: translate3d(25px, 0, 0);
+    -ms-transform: translate3d(25px, 0, 0);
+    -o-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+}
+
+/*sImoSwitch Colors*/
+
+/* sImoSwitch Default */
+.sImo-ui-switch input[type="checkbox"].sImo-ui-switch:checked + div {
+    background-color: gray;
+    border: 1px solid #696969;
+    box-shadow: inset 0 0 0 10px gray;
+}
+
+.sImo-ui-switch input[type="checkbox"].sImo-ui-switch:not(checked) + div > div {
+    box-shadow: 0 4px 8px rgba(177, 177, 177, 0.79), 0 0 0 1px gray;
+}
+
+/* switch flash */
+.sImo-ui-switch input[type="checkbox"].sImo-ui-switch + div {
+    box-shadow: inset 0 0 0 0 gray;
+}
+
+
+/* sImoSwitch red */
+.sImo-ui-switch input[type="checkbox"].red.sImo-ui-switch:checked + div {
+    background-color: #ff2a2a;
+    border: 1px solid #d72929;
+    box-shadow: inset 0 0 0 10px #ff2a2a;
+}
+
+.sImo-ui-switch input[type="checkbox"].red.sImo-ui-switch:not(checked) + div > div {
+    box-shadow: 0 4px 8px rgba(177, 177, 177, 0.79), 0 0 0 1px #ff2a2a;
+}
+
+/* switch flash */
+.sImo-ui-switch input[type="checkbox"].red.sImo-ui-switch + div {
+    box-shadow: inset 0 0 0 0 #ff2a2a;
+}
+
+
+/* sImoSwitch Green */
+.sImo-ui-switch input[type="checkbox"].green.sImo-ui-switch:checked + div {
+    background-color: #22dd33;
+    border: 1px solid #22af32;
+    box-shadow: inset 0 0 0 10px #22dd33;
+}
+
+.sImo-ui-switch input[type="checkbox"].green.sImo-ui-switch:not(checked) + div > div {
+    box-shadow: 0 4px 8px rgba(177, 177, 177, 0.79), 0 0 0 1px #22dd33;
+}
+
+/* switch flash */
+.sImo-ui-switch input[type="checkbox"].green.sImo-ui-switch + div {
+    box-shadow: inset 0 0 0 0 #22dd33;;
+}
+
+/* sImoSwitch Green */
+.sImo-ui-switch input[type="checkbox"].blue.sImo-ui-switch:checked + div {
+    background-color: #5599ff;
+    border: 1px solid #487ed7;
+    box-shadow: inset 0 0 0 10px #5599ff;
+}
+
+.sImo-ui-switch input[type="checkbox"].blue.sImo-ui-switch:not(checked) + div > div {
+    box-shadow: 0 4px 8px rgba(177, 177, 177, 0.79), 0 0 0 1px #5599ff;
+}
+
+/* switch flash */
+.sImo-ui-switch input[type="checkbox"].blue.sImo-ui-switch + div {
+    box-shadow: inset 0 0 0 0 #5599ff;
+}

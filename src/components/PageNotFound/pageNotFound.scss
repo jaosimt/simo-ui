@@ -1,0 +1,56 @@
+.PageNotFound {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: center;
+  max-width: 434px;
+
+  span.bybyn {
+    font-size: 35px;
+    margin-bottom: 7px;
+  }
+
+  span.title,
+  span.bybyn,
+  span.message,
+  span.description-one {
+    font-weight: bolder;
+  }
+
+  span.title {
+    font-size: 42px;
+    border-bottom: 1px solid gainsboro;
+    width: 100%;
+    margin-bottom: 14px;
+    padding-bottom: 7px;
+    color: #ff9900;
+    text-transform: uppercase;
+    word-break: break-word;
+  }
+
+  span.message {
+    font-size: 98px;
+    line-height: 1;
+  }
+
+  span.message.four-o-four {
+    margin-bottom: 21px;
+  }
+
+  span.description-one,
+  span.description-two {
+    margin: 0;
+  }
+
+  span.description-two {
+    font-size: smaller;
+  }
+
+  span.font-smaller {
+    font-size: 28px;
+  }
+
+  button {
+    margin-top: 14px;
+  }
+}

@@ -1,0 +1,72 @@
+.media-list div[name=sDiv] {
+    cursor: pointer;
+}
+
+.media-list {
+    margin-top: 15px;
+}
+
+.media-list div[name=sDiv]:not(:nth-child(1)):not(:nth-child(2)) {
+    margin-top: 20px;
+}
+
+.media-list div[name=sDiv]:hover {
+    opacity: 1;
+}
+
+.media-list > div[name=sDiv] div.sImo-ui-div {
+    padding: 0;
+}
+
+.media-list div[name=sDiv] {
+    width: 49.5%;
+    min-width: 430px;
+    opacity: 0.7;
+}
+
+.media-list div[name=sDiv] .media,
+.media-list div[name=sDiv] .list {
+    height: 110px;
+    float: left;
+}
+.media-list div[name=sDiv] .media {
+    width: 110px;
+    border: 1px solid gainsboro;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-size: 110px;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.83);
+}
+
+.media-list div[name=sDiv] .list {
+    margin-left: 10px;
+    color: gray;
+    width: calc(100% - 130px);
+}
+
+.media-list div[name=sDiv] .list > .name {
+    font-size: larger;
+    font-weight: bolder;
+    height: 25px;
+    line-height: 25px;
+}
+
+.media-list div[name=sDiv] .list > .address {
+    font-size: smaller;
+    font-weight: normal;
+    font-style: italic;
+    margin: 3px 0;
+    height: 20px;
+}
+
+.media-list div[name=sDiv] .list > .description {
+    margin-top: 10px;
+    bottom: 0;
+    height: 48px;
+    overflow: hidden;
+}
+
+.media-list .media img { width: 108px; }

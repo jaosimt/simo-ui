@@ -1,0 +1,71 @@
+div[name=sImo-ui-div] {
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+div[name=sImo-ui-div] div.sImo-ui-div-label {
+    padding: 10px;
+}
+
+div[name=sImo-ui-div] div.sImo-ui-div {
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+
+div[name=sImo-ui-div] div.sImo-ui-div-label ~ div.sImo-ui-div {
+    height: calc(100% - 50px);
+}
+
+div[name=sImo-ui-div].center-label div.sImo-ui-div-label {
+    text-align: center;
+}
+
+div[name=sImo-ui-div].rounded {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+div[name=sImo-ui-div] div.sImo-ui-div-label {
+    color: black;
+}
+
+div[name=sImo-ui-div].gray div.sImo-ui-div-label,
+div[name=sImo-ui-div].red div.sImo-ui-div-label,
+div[name=sImo-ui-div].blue div.sImo-ui-div-label {
+    color: white;
+}
+
+div[name=sImo-ui-div] div.sImo-ui-div-label {
+    background-color: transparent;
+}
+div[name=sImo-ui-div] {
+    border: 1px solid transparent;
+}
+
+div[name=sImo-ui-div].gray div.sImo-ui-div-label {
+    background-color: gray;
+}
+div[name=sImo-ui-div].gray {
+    border: 1px solid gray;
+}
+
+div[name=sImo-ui-div].red div.sImo-ui-div-label {
+    background-color: #ff2a2a;
+}
+div[name=sImo-ui-div].red {
+    border: 1px solid #ff2a2a;
+}
+
+div[name=sImo-ui-div].blue div.sImo-ui-div-label {
+    background-color: #5599ff;
+}
+div[name=sImo-ui-div].blue {
+    border: 1px solid #5599ff;
+}
+
+.sImo-ui-modal div[name=sImo-ui-div] {
+    background-color: white;
+}
