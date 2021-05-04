@@ -20,7 +20,7 @@ export default function ContentContainer() {
 	const [ opacity, setOpacity ] = useState(1);
 	
 	useEffect(() => {
-		window.simo.init.uiWidgets();
+		if (window.simo && window.simo.init) window.simo.init.uiWidgets();
 	}, [])
 	
 	const navClickHandler = (id) => {
